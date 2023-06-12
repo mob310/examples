@@ -13,7 +13,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: mob310/appweb:app1
+      - image: mob310/appweb:app
         name: frontend-container
         ports:
         - containerPort: 80
