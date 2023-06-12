@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: frontend-deployment
 spec:
-  replicas: 5
+  replicas: 4
   selector:
     matchLabels:
       app: frontend
@@ -13,7 +13,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: mob310/appweb:app
+      - image: mob310/appweb:app1
         name: frontend-container
         ports:
         - containerPort: 80
